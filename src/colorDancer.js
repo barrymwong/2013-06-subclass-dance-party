@@ -11,5 +11,5 @@ makeColorDancer.prototype.constructor = makeColorDancer;
 
 makeColorDancer.prototype.step = function() {
   makeDancer.prototype.step.apply(this);
-  this.$node.addClass('color-anim');
+  this.$node.addClass('color-anim').html('<img src="http://www.appsmay.com/upload/20120321/icon-space-invaders-for-android.jpg">');
 };
