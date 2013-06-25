@@ -1,10 +1,11 @@
-var makeColorDancer = function(){
+var makeColorDancer = function(top, left, timeBetweenSteps){
 	// run makeDancer class inside this context
   makeDancer.apply(this, arguments);
+  //makeDancer();
 };
 
 // overwrite the colorDancer prototype with a new makeDancer object
-makeColorDancer.prototype = new makeDancer();
+makeColorDancer.prototype = new makeDancer(); //Object.create(makeDancer);
 
 // point colorDancer constructor at the colorDancer class
 makeColorDancer.prototype.constructor = makeColorDancer;

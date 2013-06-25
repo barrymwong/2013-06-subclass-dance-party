@@ -1,5 +1,6 @@
 var makeFadeDancer = function(top, left, timeBetweenSteps) {
   makeDancer.apply(this, arguments);
+  window.dancers.push(this);
 };
 
 makeFadeDancer.prototype = new makeDancer();
@@ -10,4 +11,5 @@ makeFadeDancer.prototype.step = function(){
 
   this.$node.fadeToggle();
 };
+
 

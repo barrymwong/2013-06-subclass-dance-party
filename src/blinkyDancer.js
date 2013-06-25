@@ -1,6 +1,8 @@
 var makeBlinkyDancer = function(top, left, timeBetweenSteps){
-  //debugger;
+  // debugger;
   makeDancer.apply(this, arguments);
+  window.dancers.push(this);
+
 };
 
 makeBlinkyDancer.prototype = new makeDancer();
