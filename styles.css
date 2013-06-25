@@ -25,3 +25,23 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.dancer.color-anim {
+  -webkit-animation: colorAnim 0.5s infinite;
+  animation: colorAnim 0.5s infinite;
+}
+
+@-webkit-keyframes colorAnim {
+  0% { border: 10px solid yellow; box-shadow: 0 0 10px yellow }
+  25% { border: 10px solid green; box-shadow: 0 0 10px green  }
+  50% { border: 10px solid red; box-shadow: 0 0 10px red  }
+  100% { border: 10px solid blue; box-shadow: 0 0 10px blue  }
+}
+
+@keyframes colorAnim {
+  0% { border: 10px solid yellow; box-shadow: 0 0 10px yellow }
+  25% { border: 10px solid green; box-shadow: 0 0 10px green  }
+  50% { border: 10px solid red; box-shadow: 0 0 10px red  }
+  100% { border: 10px solid blue; box-shadow: 0 0 10px blue  }
+}
+

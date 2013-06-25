@@ -5,7 +5,6 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps){
 
 makeBlinkyDancer.prototype = new makeDancer();
 makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
-
 makeBlinkyDancer.prototype.step = function(){
     // call the old version of step at the beginning of any call to this new version of step
     // debugger;
